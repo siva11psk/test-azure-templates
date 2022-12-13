@@ -1,0 +1,13 @@
+parameters:
+  - name: envs
+    type: object
+
+stages:
+- ${{ each environment in parameters.envs }}:
+  - stage: ${{ environment }} 
+    variables:
+      - template: "${{ environment }}.yaml"
+    jobs:
+    - job: testing
+      steps:
+      - bash: echo $(myVariable1)

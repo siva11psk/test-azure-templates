@@ -1,0 +1,7 @@
+
+name: Pipeline de inicio
+
+stages: 
+  - template: template.yml
+    parameters:
+      envs: ['development', 'production']

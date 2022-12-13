@@ -1,0 +1,6 @@
+variables:
+    - name: myVariable1
+      value: devValue
+      
+    - name: myVariable2
+      value: anotherDevValue

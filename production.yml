@@ -1,0 +1,6 @@
+variables:
+    - name: myVariable1
+      value: prodvalue
+      
+    - name: myVariable2
+      value: anotherProdValue
