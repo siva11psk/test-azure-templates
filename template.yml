@@ -6,7 +6,7 @@ stages:
 - ${{ each environment in parameters.envs }}:
   - stage: ${{ environment }} 
     variables:
-      - template: "${{ environment }}.yaml"
+      - template: "${{ environment }}.yml"
     jobs:
     - job: testing
       steps:
